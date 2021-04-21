@@ -1,0 +1,39 @@
+.FeatureSection {
+  background-image: url(../../assets/images/sp-feature-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 617px;
+  padding: 115px 210px;
+}
+
+.FeatureSection__Content {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  max-width: 400px;
+  opacity: 0;
+  transition: 3s opacity;
+}
+
+.FeatureSection__Content h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.FeatureSection__Content h4 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.FeatureSection__Content p {
+  font-size: 13px;
+  line-height: 23px;
+}
+
+@media screen and (max-width: 640px) {
+  .FeatureSection {
+    padding: 1rem;
+  }
+}

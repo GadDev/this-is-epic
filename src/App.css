@@ -1,0 +1,45 @@
+:root {
+  --dark-blue: #0d4363;
+  --dark-purple: #100324;
+  --color-text: #130325;
+  --primary-color: #16052a;
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+  --white: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+button {
+  all: unset;
+}
+
+.App {
+  background-image: url(./assets/images/content-area-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loading {
+  font-family: var(--primary-font);
+  color: white;
+  background-color: var(--dark-purple);
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+}

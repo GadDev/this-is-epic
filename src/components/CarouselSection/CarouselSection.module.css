@@ -1,0 +1,23 @@
+.CarouselSection {
+  position: relative;
+  padding: 2rem 0;
+  margin-left: 49px;
+}
+
+.CarouselSection h3 {
+  font-family: var(--primary-font);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 0;
+  margin: 0 0 30px 150px;
+}
+
+@media screen and (max-width: 640px) {
+  .CarouselSection {
+    margin-left: 0;
+  }
+  .CarouselSection h3 {
+    margin: 0 0 30px 90px;
+  }
+}

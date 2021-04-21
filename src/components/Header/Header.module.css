@@ -1,0 +1,52 @@
+.Header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 68px;
+  z-index: 2;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  animation: slide 0.3s linear;
+}
+
+.MenuButton {
+  cursor: pointer;
+  margin-top: 20px;
+  text-indent: -9999px;
+  background-image: url(../../assets/icons/hamburger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 30px;
+  height: 25px;
+  text-indent: -9999px;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    left: -68px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .Header {
+    top: 0;
+    left: 0;
+    bottom: unset;
+    width: 100%;
+    justify-content: flex-end;
+    animation: none;
+  }
+
+  .MenuButton {
+    margin-top: 0px;
+  }
+}

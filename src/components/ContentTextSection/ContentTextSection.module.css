@@ -1,0 +1,46 @@
+.ContentTextSection {
+  background-color: var(--white);
+  padding: 50px 200px;
+  position: relative;
+}
+
+.ContentTextSection:before {
+  content: "";
+  width: 39px;
+  height: 39px;
+  background-color: var(--dark-purple);
+  position: absolute;
+  top: -19px;
+  left: 47px;
+  transform: rotate(-45deg);
+  z-index: 3;
+}
+
+.ContentTextSection article {
+  border-top: 5px solid var(--dark-purple);
+  padding: 2rem 0;
+}
+
+.ContentTextSection p {
+  color: var(--color-text);
+  font-family: var(--primary-font);
+  font-size: 13px;
+  line-height: 25px;
+  margin: 1.8rem auto 0;
+}
+
+@media screen and (max-width: 640px) {
+  .ContentTextSection {
+    padding: 1rem;
+  }
+  .ContentTextSection article {
+    border-top: none;
+  }
+
+  .ContentTextSection:before {
+    width: 30px;
+    height: 30px;
+    top: -15px;
+    left: -15px;
+  }
+}

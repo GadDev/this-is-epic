@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="5px" viewBox="0 0 20 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3-dots</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-812.000000, -2405.000000)">
+            <g id="carousel-2---articles" transform="translate(78.000000, 1912.000000)">
+                <g id="carousel-ui-card-2" transform="translate(399.000000, 60.000000)">
+                    <g id="carousel-snacks" transform="translate(0.000000, 403.000000)">
+                        <image id="3-dots" x="335" y="30" width="20" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAABGdBTUEAALGOfPtRkwAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAFKADAAQAAAABAAAABQAAAADvXU7PAAAAv0lEQVQYGV2OPwtBURiH73XLJIvBZPGnDAbEcDMZfQt3sCvuZrTxCSx8A6NFSkpEGAx2q0HZlPK89b51u2895/f8zumcjpsq+XnHceZQhRX04AM2XWSsZUQu1CXSMIMO3CBweXCDtMFmioRayuQdPO0/sgIP7RNyqC6xTbA0IxuijUiv4faYbIvXRXTid3158GSnmudIv+LyKxvxixUyfvfgJTO5HQfykywsYQBfkHnBE1rwhj6sweaIFKEAewj+ezoge1hRKNEAAAAASUVORK5CYII="></image>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,37 @@
+.CarouselButtonGroup {
+  position: absolute;
+  top: 2rem;
+  left: 68px;
+}
+
+.CarouselButtonGroup button {
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 18px;
+  height: 31px;
+  background-color: transparent;
+  margin: 0 0.7rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.CarouselButtonGroup button:hover {
+  opacity: 0.8;
+}
+
+.CarouselButtonGroup button:first-child {
+  background-image: url(../../assets/icons/slider-arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.CarouselButtonGroup button:last-child {
+  background-image: url(../../assets/icons/slider-arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 640px) {
+  .CarouselButtonGroup {
+    left: 0px;
+  }
+}

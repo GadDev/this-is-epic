@@ -1,0 +1,58 @@
+.Hero {
+  color: var(--white);
+  display: grid;
+  place-items: center center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: var(--primary-font);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.Hero h1 {
+  font-weight: 700;
+  font-size: 72px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.Hero h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.Hero p {
+  font-size: 13px;
+  line-height: 25px;
+  max-width: 500px;
+}
+
+.Hero article {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 50px 150px;
+}
+
+.Logo {
+  max-width: 430px;
+}
+
+.Logo img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .Hero article {
+    padding: 1rem;
+  }
+
+  .Hero h1 {
+    font-size: 2rem;
+  }
+  .Logo {
+    max-width: 150px;
+  }
+}

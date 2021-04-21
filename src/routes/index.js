@@ -2,18 +2,17 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Home from "../pages/Home";
-import Content from "../pages/Content";
+import Article from "../pages/Article";
 
 const routesConfig = [
   {
     path: "/",
-    exact: "true",
+    exact: true,
     component: Home,
   },
   {
-    path: "/content",
-    exact: "true",
-    component: Content,
+    path: "/article",
+    component: Article,
   },
 ];
 

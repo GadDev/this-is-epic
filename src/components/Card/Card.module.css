@@ -1,0 +1,110 @@
+.Card {
+  width: auto;
+  margin: auto 1rem;
+  overflow: hidden;
+}
+
+.ImageWrapper {
+  padding-top: 153px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Content {
+  position: relative;
+  background-color: white;
+  color: #0c2539;
+  font-family: var(--secondary-font);
+  padding: 2rem;
+  text-align: left;
+}
+
+.Content:before {
+  content: "";
+  width: 39px;
+  height: 39px;
+  background-color: var(--dark-purple);
+  position: absolute;
+  top: -19px;
+  left: -19px;
+  transform: rotate(-45deg);
+  z-index: 3;
+}
+
+.Content h4 {
+  color: #0c2539;
+  font-size: 25px;
+  line-height: 23px;
+  margin: 0;
+}
+
+.Content p {
+  font-size: 13px;
+  line-height: 24px;
+}
+.CommentsWrapper {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CommentsCount {
+  color: #677278;
+  font-family: var(--secondary-font);
+  font-size: 12px;
+  line-height: 24px;
+  border-right: 1px solid #e5e5e5;
+  padding: 1rem 1rem 1rem 2.2rem;
+  position: relative;
+}
+
+.CommentsCount:before {
+  content: "";
+  display: block;
+  background-image: url(../../assets/icons/bubble.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 17px;
+  top: 1.2rem;
+  left: 0.5rem;
+  z-index: 1;
+  position: absolute;
+}
+
+.ReadMore {
+  border-left: 1px solid #e5e5e5;
+  text-indent: -9999px;
+  background-image: url(../../assets/icons/dots.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+  display: block;
+  width: 60px;
+  height: 100%;
+}
+
+.Likes {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  color: white;
+}
+
+.Likes button {
+  cursor: pointer;
+  display: flex;
+}
+
+.LikesIcon {
+  background-image: url(../../assets/icons/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 17px;
+  height: 17px;
+  display: block;
+  margin-right: 5px;
+}
