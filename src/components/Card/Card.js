@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Card.module.css";
-import cn from "classnames";
+
 const Card = ({ item }) => {
   const { id, title, description, comments, likes } = item;
   return (

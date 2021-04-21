@@ -1,12 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useRef, useState, useEffect } from "react";
 import ContentTextSection from "../../components/ContentTextSection";
 import Hero from "../../components/Hero";
 import Layout from "../../components/Layout";
-import { useLocation } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 import { useQuery } from "../../hooks/useQuery";
 import Bg from "../../assets/images/article-bg.jpg";
-import { content } from "./data";
+
 const Article = () => {
   const isComponentMounted = useRef(true);
   const [post, setPost] = useState(null);
@@ -41,8 +41,7 @@ const Article = () => {
       </Layout>
     );
   }
-  console.log(post);
-  console.log(data);
+
   return (
     <Layout>
       <Hero bg={Bg} logo="">

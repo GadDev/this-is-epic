@@ -20,8 +20,6 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
 const CarouselComponent = ({ children }) => {
   return (
     <Carousel
-      transitionDuration={500}
-      customTransition="all .5"
       customButtonGroup={<ButtonGroup />}
       arrows={false}
       renderButtonGroupOutside={true}
@@ -30,7 +28,6 @@ const CarouselComponent = ({ children }) => {
       infinite={true}
       draggable={true}
       keyBoardControl={true}
-      customTransition="all .5"
       autoplay={false}
       containerClass="carousel-logo-container"
     >
