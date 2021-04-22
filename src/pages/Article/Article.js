@@ -1,25 +1,18 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useRef, useState, useEffect } from "react";
 import ContentTextSection from "../../components/ContentTextSection";
 import Hero from "../../components/Hero";
 import Layout from "../../components/Layout";
-// import { useFetch } from "../../hooks/useFetch";
 import { useQuery } from "../../hooks/useQuery";
 import Bg from "../../assets/images/article-bg.jpg";
 
 import { Context } from "../../contexts/store";
 
 const Article = () => {
-  // const isComponentMounted = useRef(true);
   const [post, setPost] = useState(null);
   const [state, dispatch] = useContext(Context);
 
-  // const { data, loading, error } = useFetch(
-  //   "data/articles.json",
-  //   {},
-  //   isComponentMounted,
-  //   []
-  // );
   let query = useQuery();
   useEffect(() => {
     const postId = query.get("id");
