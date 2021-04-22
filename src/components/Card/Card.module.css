@@ -1,7 +1,6 @@
 .Card {
   width: auto;
   margin: auto 1rem;
-  overflow: hidden;
 }
 
 .ImageWrapper {
@@ -100,11 +99,6 @@
 }
 
 .LikesIcon {
-  background-image: url(../../assets/icons/heart.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 17px;
-  height: 17px;
   display: block;
-  margin-right: 5px;
+  margin: 0 10px;
 }

@@ -1,6 +1,7 @@
 import { useContext, useEffect, useRef } from "react";
-import GlobalState from "../../contexts/GlobalState";
+
 import { useFetch } from "../../hooks/useFetch";
+import { Context } from "../../contexts/store";
 
 import ContentSection from "../../components/ContentSection";
 import CarouselSection from "../../components/CarouselSection";
@@ -13,7 +14,7 @@ import Logo from "../../assets/images/logo.png";
 import { content } from "./dataView";
 
 const Home = () => {
-  const [state, setState] = useContext(GlobalState);
+  const [state, dispatch] = useContext(Context);
   const isComponentMounted = useRef(true);
 
   const { data, loading, error } = useFetch(
@@ -24,8 +25,8 @@ const Home = () => {
   );
 
   useEffect(() => {
-    setState((state) => ({ ...state, posts: data }));
-  }, [data, setState]);
+    dispatch({ type: "SET_POSTS", payload: data });
+  }, [data, dispatch]);
 
   if (loading) {
     return (

@@ -1,8 +1,11 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Home from "../pages/Home";
 import Article from "../pages/Article";
+
+import "./animation.css";
 
 const routesConfig = [
   {
@@ -17,12 +20,18 @@ const routesConfig = [
 ];
 
 export default function Routes() {
+  let location = useLocation();
+
   return (
-    <Switch>
-      {routesConfig.map((route, i) => (
-        <StandardRoute key={i} {...route} />
-      ))}
-    </Switch>
+    <TransitionGroup>
+      <CSSTransition key={location.key} classNames="fade" timeout={3000}>
+        <Switch location={location}>
+          {routesConfig.map((route, i) => (
+            <StandardRoute key={i} {...route} />
+          ))}
+        </Switch>
+      </CSSTransition>
+    </TransitionGroup>
   );
 }
 
@@ -31,10 +40,7 @@ function StandardRoute(route) {
     <Route
       path={route.path}
       exact={route.exact}
-      render={(props) => (
-        // pass the sub-routes down to keep nesting
-        <route.component {...props} routes={route.routes} />
-      )}
+      render={(props) => <route.component {...props} routes={route.routes} />}
     />
   );
 }
