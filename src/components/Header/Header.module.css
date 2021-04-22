@@ -1,7 +1,9 @@
 .Header {
   box-sizing: border-box;
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-content: center;
   position: fixed;
   top: 0;
@@ -25,6 +27,35 @@
   width: 30px;
   height: 25px;
   text-indent: -9999px;
+}
+
+.Link {
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  font-family: var(--primary-font);
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 200px;
+  transform-origin: -40px -50px;
+  letter-spacing: 1px;
+  position: relative;
+}
+.Link:before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: -75px;
+  display: block;
+  background-image: url(../../assets/icons/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 15px;
+  height: 10px;
+
+  transform: rotate(90deg);
 }
 
 @keyframes slideFromLeft {

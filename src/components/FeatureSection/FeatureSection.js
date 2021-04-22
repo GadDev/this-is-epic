@@ -2,7 +2,7 @@ import { useRef } from "react";
 import useOnScreen from "../../hooks/useOnScreen";
 import styles from "./FeatureSection.module.css";
 
-const FeatureSection = ({ children }) => {
+const FeatureSection = () => {
   const ref = useRef();
   const isVisible = useOnScreen(ref);
   const styleArticle = isVisible ? { opacity: "1" } : {};

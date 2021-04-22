@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 
-import { contents } from "./content_block";
+import { contents } from "./footer_block_content";
 
 const FooterBlock = ({ data }) => {
   const { title, content } = data;

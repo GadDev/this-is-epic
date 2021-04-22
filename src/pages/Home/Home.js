@@ -58,7 +58,7 @@ const Home = () => {
       <CarouselSection title="pictures worth seeing" items={state.posts} />
       <ContentSection>{content.sectionTextOne}</ContentSection>
       <CarouselSection title="articles worth reading" items={state.posts} />
-      <ContentSection>{content.sectionTextTwo}</ContentSection>
+      <ContentSection id="start-up">{content.sectionTextTwo}</ContentSection>
     </Layout>
   );
 };

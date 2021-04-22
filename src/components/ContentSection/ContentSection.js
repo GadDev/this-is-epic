@@ -1,7 +1,11 @@
 import styles from "./ContentSection.module.css";
 
-const ContentSection = ({children}) => {
-  return <div className={styles.ContentSection}>{children}</div>;
+const ContentSection = ({ children, id }) => {
+  return (
+    <div className={styles.ContentSection} id={id}>
+      {children}
+    </div>
+  );
 };
 
 export default ContentSection;
