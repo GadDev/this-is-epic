@@ -80,4 +80,7 @@
   .MenuButton {
     margin-top: 0px;
   }
+  .Link {
+    display: none;
+  }
 }
